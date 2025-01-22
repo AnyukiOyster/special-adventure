@@ -53,7 +53,7 @@ class QuestLog:
                 print(f"Задание «{quest.name}» {quest.success}")
 
 
-quest1 = Quest("Спасти принцессу", "Найти и спасти принцессу из замка.")
+quest1 = Quest("Спасти принцессу", "Найдите и спасите принцессу.")
 quest2 = Quest("Собрать 10 ягод", "Соберите 10 ягод для зелья.")
 
 log = QuestLog()
