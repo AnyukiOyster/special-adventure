@@ -21,9 +21,9 @@ def bfs(maze):
     while queue:
         (x, y), path = queue.popleft()
         if (x, y) == end:
-            return path  # Найден путь
+            return path  # Выводит найденный путь
 
-        for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:  # Движения
+        for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:  # Варианты передвижения
             nx, ny = x + dx, y + dy
             if 0 <= nx < rows and 0 <= ny < cols and maze[nx][ny] in [0, 'E'] and (nx, ny) not in visited:
                 queue.append(((nx, ny), path + [(nx, ny)]))
