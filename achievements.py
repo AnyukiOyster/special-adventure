@@ -8,7 +8,7 @@ class Player:
     def __init__(self, name, role):
         self.name = name
         self.role = role
-        self.achievements = {}  # Словарь, который содержит {название: объект Achievement}
+        self.achievements = {}  # Словарь, который содержит ключ-значение {название: объект класса Achievement}
 
     def __str__(self):
         return f"{self.name}. Класс: {self.role}"
